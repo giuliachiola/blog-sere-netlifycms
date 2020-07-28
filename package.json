@@ -1,0 +1,43 @@
+{
+  "name": "blog-sere-netlifycms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "_____________________________Styles_____________________________": "",
+    "clean:dev": "rimraf _includes/styles/css/*.css",
+    "scss:to:css:dev": "node-sass --output-style expanded _includes/styles/scss/ -o _includes/styles/css-pre-postcss/",
+    "css:to:postcss:dev": "postcss _includes/styles/css-pre-postcss --dir _includes/styles/css",
+    "styles:dev": "npm run scss:to:css:dev && npm run css:to:postcss:dev",
+    "watcher": "nodemon -e scss -x \"npm run styles:dev\"",
+    "_____________________________11ty_____________________________": "",
+    "dev": "npm run styles:dev && rm -rf _site && npx @11ty/eleventy --serve watcher",
+    "dev:debug": "DEBUG=Eleventy* npm run dev",
+    "build": "rm -rf _site && npx @11ty/eleventy"
+  },
+  "dependencies": {
+    "luxon": "^1.24.1"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.3",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "stylelint": "^13.6.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/giuliach/blog-sere-netlifycms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/giuliach/blog-sere-netlifycms/issues"
+  },
+  "homepage": "https://gitlab.com/giuliach/blog-sere-netlifycms#readme"
+}

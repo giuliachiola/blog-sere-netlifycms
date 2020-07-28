@@ -1,7 +1,12 @@
+const CleanCSS = require("clean-css");
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('images')
   eleventyConfig.addPassthroughCopy('admin')
 
+  /**
+    Date
+   */
   const {
     DateTime
   } = require("luxon");
@@ -19,4 +24,10 @@ module.exports = function(eleventyConfig) {
     }).toFormat("dd-MM-yy");
   });
 
+  /**
+    CSS
+  */
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 };
