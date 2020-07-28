@@ -9,12 +9,7 @@
 	{% endset %}
 	<!-- feed it through our cssmin filter to minify -->
 	<style>
-		{
-				{
-				css | cssmin | safe
-			}
-		}
-
+		{{ css | cssmin | safe }}
 	</style>
 </head>
 
