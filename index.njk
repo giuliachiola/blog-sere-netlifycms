@@ -3,5 +3,7 @@ layout: layouts/base.njk
 permalink: /
 ---
 
-{% set postslist = collections.posts %}
+<h1 class="c-main-title"><a href="/">Note to self.</a></h1>
+
+{% set postslist = collections.posts | reverse %}
 {% include "postslist.njk" %}
