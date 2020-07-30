@@ -174,8 +174,8 @@ a {
 
 .c-card__text {
   color: #838383;
-  width: 100%;
   position: relative;
+  width: 100%;
 }
 
 .c-card__content {
@@ -195,6 +195,10 @@ a {
   }
 }
 
+.c-card__img-wrapper {
+  position: relative;
+}
+
 @media (min-width: 48em) {
   .c-card__img-wrapper {
     flex-basis: 50%;
@@ -208,8 +212,24 @@ a {
   }
 }
 
+.c-card__img-wrapper::after {
+  background: radial-gradient(circle, #804e0f, #3b003b);
+  border: 0;
+  content: '';
+  height: 100%;
+  left: 0;
+  mix-blend-mode: screen;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
 .c-card__img {
   max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
 }
 
 .c-card__date {
