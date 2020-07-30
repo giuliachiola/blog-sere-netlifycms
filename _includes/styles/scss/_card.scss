@@ -23,6 +23,7 @@
 .c-card__text {
 	color: $color-4;
 	width: 100%;
+	position: relative;
 }
 
 .c-card__content {
@@ -38,8 +39,14 @@
 }
 
 .c-card__img-wrapper {
-	flex-basis: 20%;
-	margin-right: 20px;
+	@include mq(tablet) {
+		flex-basis: 50%;
+		margin-right: 20px;
+	}
+
+	@include mq(desktop) {
+		flex-basis: 20%;
+	}
 }
 
 .c-card__img {
@@ -47,8 +54,9 @@
 }
 
 .c-card__date {
+	bottom: 0;
 	color: $color-3;
-	display: block;
 	font-style: italic;
-	text-align: right;
+	position: absolute;
+	right: 0;
 }

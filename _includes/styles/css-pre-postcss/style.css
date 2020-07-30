@@ -171,6 +171,7 @@ a {
 .c-card__text {
   color: #838383;
   width: 100%;
+  position: relative;
 }
 
 .c-card__content {
@@ -190,9 +191,17 @@ a {
   }
 }
 
-.c-card__img-wrapper {
-  flex-basis: 20%;
-  margin-right: 20px;
+@media (min-width: 48em) {
+  .c-card__img-wrapper {
+    flex-basis: 50%;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 64em) {
+  .c-card__img-wrapper {
+    flex-basis: 20%;
+  }
 }
 
 .c-card__img {
@@ -200,8 +209,9 @@ a {
 }
 
 .c-card__date {
+  bottom: 0;
   color: #ad9d9d;
-  display: block;
   font-style: italic;
-  text-align: right;
+  position: absolute;
+  right: 0;
 }
