@@ -6,10 +6,12 @@
 					<img class="c-card__img" src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}"></img>
 				</div>
 
-				<div class="c-card__content">
+				<div class="c-card__text">
 					<h2>{{ post.data.title }}</h2>
 					<p class="c-card__description">{{ post.data.description }}</p>
 
+					{# TODO: remove links! #}
+					{# <div class="c-card__content">{{ post.templateContent }}</div> #}
 					<time class="c-card__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
 				</div>
 			</a>

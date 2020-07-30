@@ -9,9 +9,11 @@
 @import 'layout';
 @import 'backgrounds';
 @import 'typography';
+@import 'text-truncation';
 
 // Components
 
+@import 'main-title';
 @import 'post';
 @import 'postlist';
 @import 'card';

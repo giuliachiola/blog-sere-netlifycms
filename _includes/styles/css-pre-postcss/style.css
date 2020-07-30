@@ -27,20 +27,6 @@ body {
   }
 }
 
-.c-main-title {
-  margin: 30px 0;
-  text-align: center;
-}
-
-.c-main-title a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.c-main-title a:hover {
-  text-decoration: #fff dotted underline;
-}
-
 body {
   background: radial-gradient(rgba(255, 255, 255, 0.4) 15%, transparent 16%), #d9adad;
   background-position: 0 0, 20px 20px;
@@ -64,7 +50,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Amatic SC', cursive;
   margin: 2.75rem 0 1.05rem;
   font-weight: 300;
   line-height: 1.15;
@@ -93,6 +79,18 @@ h5 {
 
 small, .text_small {
   font-size: 0.75em;
+}
+
+.c-main-title {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 100px;
+}
+
+.c-main-title a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 10px 6px 8px rgba(53, 53, 53, 0.9);
 }
 
 .c-post {
@@ -159,9 +157,16 @@ small, .text_small {
   text-decoration: #838383 dotted underline;
 }
 
-.c-card__content {
+.c-card__text {
   color: #838383;
   width: 100%;
+}
+
+.c-card__content {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .c-card__description {

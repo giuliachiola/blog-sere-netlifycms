@@ -15,9 +15,13 @@
 	}
 }
 
-.c-card__content {
+.c-card__text {
 	color: $color-4;
 	width: 100%;
+}
+
+.c-card__content {
+	@include line-clamp(3);
 }
 
 .c-card__description {
