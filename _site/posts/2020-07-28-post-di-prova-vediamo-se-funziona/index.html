@@ -1,38 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset=utf-8>
+		<title>Il blog di Sere</title>
+		<link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/whatsapp/238/cat-face_1f431.png"/>
+		<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/_includes/styles/css/style.css">
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		
+	</head>
 
-<head>
-	<title>Il blog di Sere</title>
-	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-	<!-- capture the CSS content as a Nunjucks variable -->
-	
-	<!-- feed it through our cssmin filter to minify -->
-	<style>
-		@import url(https://fonts.googleapis.com/css?family=Roboto:300|Poppins:400);body{margin:0}body{background:radial-gradient(#d9adad 15%,transparent 16%),#fccbcb;background-position:0 0,20px 20px;background-size:40px 40px}html{font-size:100%}body{font-family:Poppins,sans-serif;font-weight:400;line-height:1.65;color:#333}p{margin-bottom:1.15rem}h1,h2,h3,h4,h5{margin:2.75rem 0 1.05rem;font-family:Roboto,sans-serif;font-weight:300;line-height:1.15}h1{margin-top:0;font-size:4.209em}h2{font-size:3.157em}h3{font-size:2.369em}h4{font-size:1.777em}h5{font-size:1.333em}.text_small,small{font-size:.75em}
-	</style>
-</head>
+	<body>
+		<div class="l-wrapper">
+			<h1 class="c-main-title"><a href="/">Il blog di Sere</a></h1>
 
-<body>
-	<h1>Il blog di Sere</h1>
+			
+<div class="c-post">
+	<h2 class="c-post__title">Post di prova vediamo se funziona</h2>
+	<div class="c-post__content"><p>Ciao ciao!!</p>
+</div>
 
-	<h2>Post di prova vediamo se funziona</h2>
-<h3>14-07-20</h3>
-<img src="/images/uploads/kitten.jpg" alt="/images/uploads/kitten.jpg"></img>
-<p><p>Ciao ciao!!</p>
-</p>
+	<img class="c-post__img" src="/images/uploads/kitten.jpg" alt="/images/uploads/kitten.jpg"></img>
+	<time class="c-post__date">14 Jul 2020</time>
+</div>
 
+		</div>
 
-	<script>
-		if (window.netlifyIdentity) {
-			window.netlifyIdentity.on("init", user => {
-				if (!user) {
-					window.netlifyIdentity.on("login", () => {
-						document.location.href = "/admin/";
-					});
-				}
-			});
-		}
+		<script>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on("init", user => {
+					if (!user) {
+						window.netlifyIdentity.on("login", () => {
+							document.location.href = "/admin/";
+						});
+					}
+				});
+			}
 
-	</script>
-</body>
-
+		</script>
+	</body>
 </html>

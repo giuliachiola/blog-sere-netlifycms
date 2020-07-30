@@ -1,11 +1,10 @@
-$co_body-color: $color-1;
+$co_body-color: rgba($color-white, 0.4);
 $co_dot-color: $color-2;
 
 $sp_dot-size: 20px;
 
 body {
-  background: radial-gradient($co_body-color 15%, transparent 16%), $co_dot-color;
-  background-position: 0 0, $sp_dot-size $sp_dot-size;
-  background-size: $sp_dot-size * 2 $sp_dot-size * 2 ;
+	background: radial-gradient($co_body-color 15%, transparent 16%), $co_dot-color;
+	background-position: 0 0, $sp_dot-size $sp_dot-size;
+	background-size: $sp_dot-size * 2 $sp_dot-size * 2 ;
 }
-

@@ -1,0 +1,35 @@
+.c-post {
+	background: rgba($color-white, 0.9);
+	border-radius: 5px;
+	padding: 20px;
+	color: $color-4;
+}
+
+.c-post__content {
+	font-size: 16px;
+
+	@include mq(desktop) {
+		font-size: 20px;
+	}
+}
+
+.c-post__title {
+	margin-top: 0;
+}
+
+.c-post__img {
+	max-width: 100%;
+	display: block;
+	margin: 20px auto;
+
+	@include mq(desktop) {
+		max-width: 80%;
+	}
+}
+
+.c-post__date {
+	color: $color-3;
+	display: block;
+	text-align: right;
+	font-style: italic;
+}

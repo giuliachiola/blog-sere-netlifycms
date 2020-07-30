@@ -1,0 +1,45 @@
+.c-card {
+	background: $color-white;
+	border-radius: 5px;
+	display: flex;
+	margin: 20px 0;
+	padding: 20px;
+	text-decoration: none; // card is a link tag
+
+	h2 {
+		margin: 0;
+	}
+
+	&:hover h2 {
+		text-decoration: $color-4 dotted underline;
+	}
+}
+
+.c-card__content {
+	color: $color-4;
+	width: 100%;
+}
+
+.c-card__description {
+	font-size: 16px;
+
+	@include mq(desktop) {
+		font-size: 20px;
+	}
+}
+
+.c-card__img-wrapper {
+	flex-basis: 20%;
+	margin-right: 20px;
+}
+
+.c-card__img {
+	max-width: 100%;
+}
+
+.c-card__date {
+	color: $color-3;
+	display: block;
+	font-style: italic;
+	text-align: right;
+}

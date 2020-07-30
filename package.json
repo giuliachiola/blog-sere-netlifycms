@@ -11,7 +11,8 @@
     "styles:dev": "npm run scss:to:css:dev && npm run css:to:postcss:dev",
     "watcher": "nodemon -e scss -x \"npm run styles:dev\"",
     "_____________________________11ty_____________________________": "",
-    "dev": "npm run styles:dev && rm -rf _site && npx @11ty/eleventy --serve watcher",
+    "build:serve": "rm -rf _site && npx @11ty/eleventy --serve watcher",
+    "dev": "npm-run-all -l --parallel build:serve watcher",
     "dev:debug": "DEBUG=Eleventy* npm run dev",
     "build": "rm -rf _site && npx @11ty/eleventy"
   },
@@ -22,10 +23,12 @@
     "clean-css": "^4.2.3",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
     "postcss": "^7.0.32",
     "postcss-cli": "^7.1.1",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
+    "sass-mq": "^5.0.1",
     "stylelint": "^13.6.1",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0"

@@ -3,6 +3,7 @@ const CleanCSS = require("clean-css");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('images')
   eleventyConfig.addPassthroughCopy('admin')
+  eleventyConfig.addPassthroughCopy('_includes/styles/css')
 
   /**
     Date
@@ -21,7 +22,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
-    }).toFormat("dd-MM-yy");
+    }).toFormat('dd LLL yyyy');
   });
 
   /**

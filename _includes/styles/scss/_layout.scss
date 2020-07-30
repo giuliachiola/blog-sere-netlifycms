@@ -1,0 +1,23 @@
+.l-wrapper {
+	margin: 20px;
+
+	@include mq(desktop) {
+		margin: 0 auto;
+		max-width: 1024px;
+	}
+}
+
+.c-main-title {
+	margin: 30px 0;
+	text-align: center;
+
+	a {
+		color: $color-white;
+		text-decoration: none;
+		// text-shadow: 5px -5px 13px $color-4;
+
+		&:hover {
+			text-decoration: $color-white dotted underline;
+		}
+	}
+}

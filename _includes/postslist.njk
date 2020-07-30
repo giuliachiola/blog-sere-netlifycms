@@ -1,13 +1,18 @@
-<ul>
-  {% for post in postslist %}
-    <li>
-      <strong>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </strong>
-      -
-      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      -
-      <span>{{ post.data.description }}</span>
-    </li>
-  {% endfor %}
+<ul class="c-postlist">
+	{% for post in postslist %}
+		<li>
+			<a class="c-card" href="{{ post.url | url }}">
+				<div class="c-card__img-wrapper">
+					<img class="c-card__img" src="{{ post.data.featuredImage | url }}" alt="{{ post.data.featuredImage }}"></img>
+				</div>
+
+				<div class="c-card__content">
+					<h2>{{ post.data.title }}</h2>
+					<p class="c-card__description">{{ post.data.description }}</p>
+
+					<time class="c-card__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+				</div>
+			</a>
+		</li>
+	{% endfor %}
 </ul>

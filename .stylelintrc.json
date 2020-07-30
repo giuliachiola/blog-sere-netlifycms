@@ -49,7 +49,7 @@
               ]
           }
       ],
-      "indentation": 2,
+      "indentation": "tab",
       "string-quotes": "single",
       "no-duplicate-selectors": true,
       "color-hex-case": "lower",
