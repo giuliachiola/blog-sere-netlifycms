@@ -195,6 +195,10 @@ a {
   }
 }
 
+.c-card__img-wrapper {
+  position: relative;
+}
+
 @media (min-width: 48em) {
   .c-card__img-wrapper {
     flex-basis: 50%;
@@ -208,8 +212,24 @@ a {
   }
 }
 
+.c-card__img-wrapper::after {
+  background: radial-gradient(circle, #804e0f, #3b003b);
+  mix-blend-mode: screen;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  right: 0;
+}
+
 .c-card__img {
   max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  min-height: 100%;
 }
 
 .c-card__date {
