@@ -148,9 +148,16 @@ a {
   background: #fff;
   border-radius: 5px;
   display: flex;
+  flex-direction: column;
   margin: 20px 0;
   padding: 20px;
   text-decoration: none;
+}
+
+@media (min-width: 48em) {
+  .c-card {
+    flex-direction: row;
+  }
 }
 
 .c-card h2 {

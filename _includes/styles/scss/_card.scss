@@ -2,9 +2,14 @@
 	background: $color-white;
 	border-radius: 5px;
 	display: flex;
+	flex-direction: column;
 	margin: 20px 0;
 	padding: 20px;
 	text-decoration: none; // card is a link tag
+
+	@include mq(tablet) {
+		flex-direction: row;
+	}
 
 	h2 {
 		margin: 0;
