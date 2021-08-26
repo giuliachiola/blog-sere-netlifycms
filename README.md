@@ -4,7 +4,7 @@ This project is the basis of a personal private blog of a very dear friend of mi
 
 | \                | \                                                                                                                                                                    |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Pipeline         | [![Netlify Status](https://api.netlify.com/api/v1/badges/60102f12-55a3-46b8-a5ca-0641e7abf86d/deploy-status)](https://app.netlify.com/sites/sere-notetoself/deploys) |
+| Deploy status	         | [![Netlify Status](https://api.netlify.com/api/v1/badges/60102f12-55a3-46b8-a5ca-0641e7abf86d/deploy-status)](https://app.netlify.com/sites/sere-notetoself/deploys) |
 | Deploy preview   | https://sere-notetoself.netlify.app/                                                                                                                                 |
 | Project typology | Personal                                                                                                                                                             |
 
